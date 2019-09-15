@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/TitleScene.unity
-    guid: 3129e771684af9244bb19164fc18b0ed
-  - enabled: 1
-    path: Assets/Tapioca/Scenes/GameCrScene.unity
-    guid: 12262bbb117d1744ca5b6f9ccc7c2c26
+    path: Assets/Tapioca/Scenes/TitleScene.unity
+    guid: 04c500e36decffb499afbe335c9e0296
   - enabled: 1
     path: Assets/Tapioca/Scenes/GameFieldScene.unity
     guid: 11246d5c46d025347a8f5136cd4821c1
+  - enabled: 1
+    path: Assets/Tapioca/Scenes/GameCrScene.unity
+    guid: 12262bbb117d1744ca5b6f9ccc7c2c26
   m_configObjects: {}

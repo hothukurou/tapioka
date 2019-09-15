@@ -10,14 +10,22 @@ public class GameCrManager : MonoBehaviour
     public GameObject NowScene;
 
     public GameObject TextScore;
+    public GameObject TextNokori;
     public GameObject gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GameObject.Find("GameManager");
-        tapioka_num = PlayerPrefs.GetInt("score",0);
+        
 
+    }
+
+    private void OnEnable()
+    {
+        tapioka_num = PlayerPrefs.GetInt("score", 0);
+        Debug.Log(tapioka_num);
+        TextNokori.GetComponent<Text>().text = tapioka_num.ToString();
     }
 
     // Update is called once per frame
