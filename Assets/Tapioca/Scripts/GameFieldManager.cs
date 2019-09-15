@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameFieldManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class GameFieldManager : MonoBehaviour
     public GameObject backImageObject;
     private SpriteRenderer backImageRenderer;
     private int backNum=0;
+    public GameObject scoreLabel;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,11 @@ public class GameFieldManager : MonoBehaviour
         
     }
 
+    private void OnEnable()
+    {
+        int score = PlayerPrefs.GetInt("score", 0);
+        scoreLabel.GetComponent<Text>().text = "入手したタピオカ:" + score;
+    }
 
     public void ClickSearchNextBsuttonEvent()
     {
